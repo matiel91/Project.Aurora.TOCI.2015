@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YourWork\TaskTrainingTwo\GhostRiderStringManipulationsBase.cs" />
+    <Compile Include="YourWork\TaskTrainingTwo\PeselValidator.cs" />
+    <Compile Include="YourWork\TaskTrainingTwo\StringManipulationsResults.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
