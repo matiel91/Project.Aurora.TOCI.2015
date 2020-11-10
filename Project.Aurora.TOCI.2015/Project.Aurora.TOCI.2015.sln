@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Aurora.TOCI.2015", "Project.Aurora.TOCI.2015\Project.Aurora.TOCI.2015.csproj", "{5F6A3F05-C3B3-4111-9F96-2EBA1EF0190A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Aurora.Tasks", "Project.Aurora.Tasks\Project.Aurora.Tasks.csproj", "{E377B263-ECC7-4D69-8630-1CB04529AAF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5F6A3F05-C3B3-4111-9F96-2EBA1EF0190A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F6A3F05-C3B3-4111-9F96-2EBA1EF0190A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F6A3F05-C3B3-4111-9F96-2EBA1EF0190A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E377B263-ECC7-4D69-8630-1CB04529AAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E377B263-ECC7-4D69-8630-1CB04529AAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E377B263-ECC7-4D69-8630-1CB04529AAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E377B263-ECC7-4D69-8630-1CB04529AAF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
