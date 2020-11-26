@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.2.1.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.2.1.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,10 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OverridingTraining\OverLoadingExampleToTaBazowa.cs" />
+    <Compile Include="OverridingTraining\OverridingExampleToTaKtoraDziedziczy.cs" />
+    <Compile Include="OverridingTraining\OverridingFUNClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YourWork\TaskTrainingThreeBankTransfers\BankTransfer.cs" />
+    <Compile Include="YourWork\TaskTrainingThreeBankTransfers\BankTransfersParser.cs" />
+    <Compile Include="YourWork\TaskTrainingThreeBankTransfers\FileOperation.cs" />
+    <Compile Include="YourWork\TaskTrainingThreeBankTransfers\PerformTransfers.cs" />
+    <Compile Include="YourWork\TaskTrainingThreeBankTransfers\TransferHandle.cs" />
     <Compile Include="YourWork\TaskTrainingTwo\GhostRiderStringManipulationsBase.cs" />
     <Compile Include="YourWork\TaskTrainingTwo\PeselValidator.cs" />
     <Compile Include="YourWork\TaskTrainingTwo\StringManipulationsResults.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
