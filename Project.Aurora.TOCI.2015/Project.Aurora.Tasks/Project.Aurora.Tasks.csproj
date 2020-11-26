@@ -42,6 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskTrainingTwoSolution\DateObjectForPeselValidator.cs" />
+    <Compile Include="TaskTrainingTwoSolution\PeselValidatorByMat.cs" />
+    <Compile Include="TaskTrainingTwoSolution\StringManipulationByMat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Aurora.TOCI.2015\Project.Aurora.TOCI.2015.csproj">
+      <Project>{5f6a3f05-c3b3-4111-9f96-2eba1ef0190a}</Project>
+      <Name>Project.Aurora.TOCI.2015</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
