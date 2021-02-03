@@ -47,6 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DelegatesTraining\DelegateExampleBasics.cs" />
+    <Compile Include="DelegatesTraining\DelegatesWithParametersConceptCheck.cs" />
+    <Compile Include="Generics\ChessFactory.cs" />
+    <Compile Include="Generics\HandlersExample\ChainOfResponsibilityHandlerStack.cs" />
+    <Compile Include="Generics\HandlersExample\Handler.cs" />
+    <Compile Include="Generics\IChessFigures.cs" />
+    <Compile Include="Generics\King.cs" />
+    <Compile Include="Generics\RegularFactory.cs" />
+    <Compile Include="LINQ_JoinTraining\BasicPlayWithLinq.cs" />
     <Compile Include="OverridingTraining\OverLoadingExampleToTaBazowa.cs" />
     <Compile Include="OverridingTraining\OverridingExampleToTaKtoraDziedziczy.cs" />
     <Compile Include="OverridingTraining\OverridingFUNClass.cs" />

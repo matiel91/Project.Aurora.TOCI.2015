@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.13.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.13.0\build\NUnit.props')" />
   <Import Project="..\packages\MSTest.TestAdapter.2.1.1\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.2.1.1\build\net45\MSTest.TestAdapter.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -45,10 +46,19 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.1.1\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework, Version=3.13.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.13.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BankTaskTests.cs" />
+    <Compile Include="Codewars tests\TestsForRepeaterLooperTask.cs" />
+    <Compile Include="Codewars tests\TestsForTrainingSoccerTable.cs" />
+    <Compile Include="DelegatTesty.cs" />
+    <Compile Include="LinqTests.cs" />
+    <Compile Include="LookingForProperPath.cs" />
     <Compile Include="OverridingTrainingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -56,11 +66,20 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CodeWars.Excersize\CodeWars.Excersize.csproj">
+      <Project>{80E5DF81-B1A8-4A4C-9DD5-7456666F6844}</Project>
+      <Name>CodeWars.Excersize</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.Aurora.Tasks\Project.Aurora.Tasks.csproj">
+      <Project>{E377B263-ECC7-4D69-8630-1CB04529AAF0}</Project>
+      <Name>Project.Aurora.Tasks</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Project.Aurora.TOCI.2015\Project.Aurora.TOCI.2015.csproj">
       <Project>{5F6A3F05-C3B3-4111-9F96-2EBA1EF0190A}</Project>
       <Name>Project.Aurora.TOCI.2015</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -69,6 +88,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.2.1.1\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.2.1.1\build\net45\MSTest.TestAdapter.props'))" />
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.2.1.1\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.2.1.1\build\net45\MSTest.TestAdapter.targets'))" />
+    <Error Condition="!Exists('..\packages\NUnit.3.13.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.13.0\build\NUnit.props'))" />
   </Target>
   <Import Project="..\packages\MSTest.TestAdapter.2.1.1\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.2.1.1\build\net45\MSTest.TestAdapter.targets')" />
 </Project>

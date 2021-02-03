@@ -42,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskTrainingThreeSolution\MatBankTransfer.cs" />
+    <Compile Include="TaskTrainingThreeSolution\MatBankTransferParser.cs" />
+    <Compile Include="TaskTrainingThreeSolution\MatFileOperation.cs" />
+    <Compile Include="TaskTrainingThreeSolution\MatPerformTransfer.cs" />
+    <Compile Include="TaskTrainingThreeSolution\MatTransferHandler.cs" />
     <Compile Include="TaskTrainingTwoSolution\DateObjectForPeselValidator.cs" />
     <Compile Include="TaskTrainingTwoSolution\PeselValidatorByMat.cs" />
     <Compile Include="TaskTrainingTwoSolution\StringManipulationByMat.cs" />
@@ -51,6 +56,10 @@
       <Project>{5f6a3f05-c3b3-4111-9f96-2eba1ef0190a}</Project>
       <Name>Project.Aurora.TOCI.2015</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="TaskTrainingThreeSolution\Files\randomdata4.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

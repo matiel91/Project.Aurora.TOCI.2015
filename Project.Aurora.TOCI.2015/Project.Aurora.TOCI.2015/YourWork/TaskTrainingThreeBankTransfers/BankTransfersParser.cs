@@ -17,5 +17,6 @@ namespace Project.Aurora.TOCI._2015.YourWork.TaskTrainingThreeBankTransfers
 
 
         protected abstract BankTransfer GetTransferEntry(string entry);
+
     }
 }

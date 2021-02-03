@@ -13,5 +13,11 @@ namespace Project.Aurora.TOCI._2015.YourWork.TaskTrainingThreeBankTransfers
         public string SourceBank { get; set; }
 
         public bool IsTransferSuccessful { get; set; }
+        public string BankCode { get; set; }
+        public string AccountNumber { get; set; }
+        public string BankName { get; set; }
+        public string ClientName { get; set; }
+
+
     }
 }
