@@ -54,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankTaskTests.cs" />
+    <Compile Include="Codewars tests\TestsForCubesTask.cs" />
+    <Compile Include="Codewars tests\TestsForHolidayFireOnTheBoat.cs" />
     <Compile Include="Codewars tests\TestsForRepeaterLooperTask.cs" />
     <Compile Include="Codewars tests\TestsForTrainingSoccerTable.cs" />
     <Compile Include="DelegatTesty.cs" />

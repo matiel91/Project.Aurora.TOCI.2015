@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hidden Cubic numbers\Cubes.cs" />
+    <Compile Include="Holiday - Fire on the boat\Kata.cs" />
     <Compile Include="Lazy Repeater\Kata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SoccerTable\Kata.cs" />
@@ -49,8 +51,10 @@
     <Compile Include="SplitString.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Holiday - Fire on the boat\Task.Source.And.Description.txt" />
     <Content Include="Lazy Repeater\Task.Source.And.Description.txt" />
     <Content Include="SoccerTable\Task.Source.And.Description.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
